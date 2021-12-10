@@ -3,7 +3,7 @@
 [ZenWeb](https://www.npmjs.com/package/zenweb)
 
 ```
-npm i @zenweb/mysql @zenweb/orm
+npm i @zenweb/mysql @zenweb/orm zenorm
 ```
 
 app/index.js
@@ -11,6 +11,7 @@ app/index.js
 import { create } from 'zenweb';
 
 export const app = create({
+  // database config
   mysql: {
     host: 'localhost',
     port: 3306,
@@ -21,9 +22,7 @@ export const app = create({
     timezone: '+08:00',
   },
   // ORM Support
-  orm: {
-    getQuery: (ctx) => app.mysql,
-  }
+  orm: {},
 });
 ```
 

@@ -8,6 +8,9 @@
     "node": ">=16.0.0"
   },
   "typings": "index.d.ts",
+  "bin": {
+    "dbgen": "./bin/dbgen.js"
+  },
   "scripts": {
     "dev": "cd example && DEBUG=* node app",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -37,5 +40,12 @@
   "files": [
     "index.js",
     "index.d.ts"
-  ]
+  ],
+  "peerDependencies": {
+    "zenorm": "^2.0.1"
+  },
+  "devDependencies": {
+    "@zenweb/core": "^2.0.1",
+    "@zenweb/mysql": "^1.4.0"
+  }
 }
