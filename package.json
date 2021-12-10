@@ -1,0 +1,41 @@
+{
+  "name": "@zenweb/orm",
+  "version": "1.0.0",
+  "description": "Zenweb ORM module",
+  "type": "module",
+  "exports": "./index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "typings": "index.d.ts",
+  "scripts": {
+    "dev": "cd example && DEBUG=* node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "YeFei",
+    "email": "316606233@qq.com"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "http",
+    "framework",
+    "koa",
+    "database",
+    "model",
+    "orm"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yefei/zenweb-orm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yefei/zenweb-orm/issues"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ]
+}
