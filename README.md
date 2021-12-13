@@ -35,3 +35,7 @@ router.get('/', async ctx => {
   ctx.body = await ctx.model.user.find().all();
 });
 ```
+
+## 如何更新模型代码文件
+
+在第一次运行时，或删除 modelsFile 一般位于 ./app/model/index.js

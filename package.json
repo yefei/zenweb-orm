@@ -7,10 +7,6 @@
   "engines": {
     "node": ">=16.0.0"
   },
-  "typings": "index.d.ts",
-  "bin": {
-    "dbgen": "./bin/dbgen.js"
-  },
   "scripts": {
     "dev": "cd example && DEBUG=* node app",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -41,11 +37,15 @@
     "index.js",
     "index.d.ts"
   ],
+  "optionalDependencies": {
+    "@zenweb/mysql": "^1.4.0"
+  },
   "peerDependencies": {
-    "zenorm": "^2.0.1"
+    "zenorm": "^2.2.0"
   },
   "devDependencies": {
     "@zenweb/core": "^2.0.1",
-    "@zenweb/mysql": "^1.4.0"
+    "@zenweb/mysql": "^1.4.0",
+    "@zenweb/router": "^2.1.0"
   }
 }

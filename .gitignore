@@ -11,3 +11,5 @@ run/
 *.sw*
 *.un~
 .npmrc
+example/app/model/index.d.ts
+example/app/model/index.js
