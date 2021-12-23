@@ -1,15 +1,11 @@
 {
   "name": "@zenweb/orm",
-  "version": "1.0.0",
+  "version": "2.3.0",
   "description": "Zenweb ORM module",
-  "type": "module",
-  "exports": "./index.js",
-  "engines": {
-    "node": ">=16.0.0"
-  },
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "cd example && DEBUG=* node app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc --build --clean && tsc"
   },
   "author": {
     "name": "YeFei",
@@ -34,18 +30,13 @@
     "url": "https://github.com/yefei/zenweb-orm/issues"
   },
   "files": [
-    "index.js",
-    "index.d.ts"
+    "dist"
   ],
-  "optionalDependencies": {
-    "@zenweb/mysql": "^1.4.0"
-  },
-  "peerDependencies": {
-    "zenorm": "^2.2.0"
-  },
   "devDependencies": {
-    "@zenweb/core": "^2.0.1",
-    "@zenweb/mysql": "^1.4.0",
-    "@zenweb/router": "^2.1.0"
+    "@zenweb/core": "^2.3.2"
+  },
+  "dependencies": {
+    "sql-easy-builder": "^2.0.2",
+    "zenorm": "^2.2.0"
   }
 }
